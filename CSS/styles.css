@@ -152,10 +152,7 @@ img {
 .container-footer {
     display: flex;
     align-items: baseline;
-    padding-top: 60px;
-    padding-bottom: 60px;
-    /* display: flex;
-    flex-direction: column;*/
+
 } 
 
 .header-btns {
@@ -240,6 +237,18 @@ margin-right: auto;
     color: var(--primery-text-color);
     margin-bottom: 10px;
 }
+.features-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+
+    width: 270px;
+    height: 120px;
+    background: var(--light2-bg-color);
+    border-radius: 4px;
+}
+
 /* what-we-do ---Чем мы занимаемся---*/
 .section-what-we-do {
     padding-bottom: 94px;
@@ -396,6 +405,8 @@ margin-right: auto;
 
 /*Footer*/
 .footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
     background-color: var(--dark-bg-color);
  
 }
@@ -404,7 +415,7 @@ margin-right: auto;
 }
 
 .logo-footer {
-    display: block;
+   
     color: var(--accent-color);
     margin-bottom: 20px;
     font-family:var(--secondary-font);
@@ -413,9 +424,11 @@ margin-right: auto;
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
- ;
-  
 }
+  .link.logo-footer {
+    display: block;
+}
+  
 .logo-span-w {
     color: var(--header-bg-color);
 }
@@ -489,8 +502,6 @@ margin-right: auto;
 .container-footer {
     display: flex;
     align-items: baseline;
-    padding-top: 60px;
-    padding-bottom: 60px;
 }
 
 
@@ -521,7 +532,6 @@ margin-right: auto;
 .modal-button:focus {
     background-color: var(--accent-color);
     color: var(--header-bg-color);
-    background: #2196F3;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
     0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -533,7 +543,7 @@ margin-right: auto;
     box-sizing: border-box;
     display: flex;
     flex-wrap: wrap;
-    margin-right: -30px;
+   
 }
 
 
@@ -590,15 +600,17 @@ line-height: 30px;
 letter-spacing: 0.03em;
 color: var(--secondary-text-color);
 }
-
-.employees-item-link:hover {
+.employees-item-link {
 display:inline-block;
-background: var(--header-bg-color);
-border: 1px solid #EEEEEE;
+}
+
+.employees-item-link:hover, 
+.employees-item-link:focus{
+
 box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
 0px 4px 4px rgba(0, 0, 0, 0.06),
 1px 4px 6px rgba(0, 0, 0, 0.16);
-transition: 0.3s;
+
 } 
         /* SVG HW4 */
 .menu-contacts-item {
@@ -626,14 +638,4 @@ transition: 0.3s;
 
 /* Benefits */
 
-.features-icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 30px;
 
-    width: 270px;
-    height: 120px;
-    background: var(--light2-bg-color);
-    border-radius: 4px;
-}
