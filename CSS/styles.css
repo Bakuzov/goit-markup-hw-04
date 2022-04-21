@@ -212,10 +212,6 @@ margin-right: auto;
     cursor: pointer; 
     margin: 0 auto;
   
-   
-    
-    
-   
 }
 .hero-button:hover ,
 .hero-button:focus{
@@ -223,6 +219,47 @@ margin-right: auto;
 }
 
 
+.backdrop.is-hidden {
+    opacity: 1;
+}
+
+.backdrop {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1600px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+} 
+    .modal {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 528px;
+        height: 581px;
+        background-color: rgba(255, 255, 255, 1);
+        box-shadow: 0px 1px 3px rgb(0 0 0 / 12%),
+        0px 1px 1px rgb(0 0 0 / 14%),
+        0px 2px 1px rgb(0 0 0 / 20%);
+        border-radius: 4px;
+    } 
+    .modal-close-icon {
+        fill: #000000;
+    }
+    .modal-close {
+
+position: absolute;      
+top: 11px;
+right: 8px;
+width: 30px;
+height: 30px;
+border-radius: 50%;
+border: 1px solid rgba(0, 0, 0, 0.1);
+ background-color: var(--header-bg-color);   
+           
+    }
 
 /* Особенности- */
 .section-title {
@@ -632,7 +669,7 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
     color: var(--accent-color);  
 }
 .header-contacts-link:hover>.icon-contacts,
-.header-contacts-link:hover>.icon-contacts {
+.header-contacts-link:focus>.icon-contacts {
     fill: var(--accent-color);
 }
 
